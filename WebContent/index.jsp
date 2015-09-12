@@ -76,6 +76,7 @@
 	
 	<h1>章节链接</h1>
 	<a href="page/chapter3.jsp">第三章：jsp内置对象（上）</a><br>
-	<a href="page/chapter4.jsp">第四章：jsp内置对象（下）</a>
+	<a href="page/chapter4.jsp">第四章：jsp内置对象（下）</a><br>
+	<a href="page/chapter5.jsp">第五章：</a><br>
 </body>
 </html>
