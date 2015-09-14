@@ -116,8 +116,11 @@
 	<%
 		pageContext.include("include.jsp");
 	%>
+	<hr>
 
 	<!-- config内置对象 -->
-	<h4>config内置对象</h4>
+	<h1>config内置对象</h1>
+	<h4>是servlet初始化时，jsp引擎向他传递消息时用的，消息包括初始化所用到的参数（通过键值对构成）以及服务器的有关信息（通过传递一个servletContext对象）</h4>
+
 </body>
 </html>
