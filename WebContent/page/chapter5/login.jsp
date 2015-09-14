@@ -9,7 +9,7 @@
 <body>
 	<h1>系统登陆</h1>
 	<hr>
-	<form name="loginForm" action="chapter5.jsp" method="post">
+	<form name="loginForm" action="dologin.jsp?mypass=999999" method="post">
 		<table>
 			<tr>
 				<td>用户名：</td>

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Insert title here</title>
+<title>chapter5</title>
 </head>
 <body>
 	<!-- 使用普通方式创建javaBean实例 -->
