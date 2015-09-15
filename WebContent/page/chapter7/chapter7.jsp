@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Insert title here</title>
+<title>jsp指令和动作</title>
 </head>
 <body>
 	<!-- include指令 -->
@@ -43,7 +43,7 @@
 			<td>页面的输出</td>
 		</tr>
 		<tr>
-			<td>准换成的servlet</td>
+			<td>转换成的servlet</td>
 			<td>主页面和包含页面转换成一个servlet</td>
 			<td>主页面和包含页面转换成独立的servlet</td>
 		</tr>
@@ -57,7 +57,66 @@
 			<td>稍快</td>
 			<td>较慢--每次资源必须被解析</td>
 		</tr>
-
 	</table>
+	<hr>
+
+
+	<!-- forward动作 -->
+	<h1>forward动作</h1>
+	<h3>等同于服务器内部转发指令：request.getRequestDispatcher("/url").forward(request,response)</h3>
+	<h4>是服务器内部转发，地址栏url不改变，与请求重定向有本质区别</h4>
+	<a href="forward_test.jsp">测试forward动作</a>
+
+
+	<!-- param动作 -->
+	<h1>param动作</h1>
+	<h3>一般与forward动作联合使用，用以提交额外的参数或者修改参数</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>

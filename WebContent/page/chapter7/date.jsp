@@ -7,3 +7,6 @@
 	String s = sdf.format(date);
 	out.print(s);
 %>
+<%
+	out.println(request.getParameter("number"));
+%>
