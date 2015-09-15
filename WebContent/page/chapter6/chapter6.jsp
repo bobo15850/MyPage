@@ -15,7 +15,9 @@
 
 	<!-- cookies简介 -->
 	<h1>cookies简介</h1>
-	<h4>保存用户状态的两种机制：session，cookies</h4>
-
+	<h3>保存用户状态的两种机制：session，cookies</h3>
+	<h5>二者对比</h5>
+	<h5>session在服务器端存储信息，session保存的是object类型，随着会话结束销毁保存的数据，保存重要的信息，安全性高</h5>
+	<h5>cookie在客戶端保存用戶信息，cookie保存的是String类型，cookie可以长期保存在客户端，保存不重要的用户信息</h5>
 </body>
 </html>

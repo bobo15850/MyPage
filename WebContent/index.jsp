@@ -78,6 +78,6 @@
 	<a href="page/chapter3/chapter3.jsp">第三章：jsp内置对象（上）</a><br>
 	<a href="page/chapter4/chapter4.jsp">第四章：jsp内置对象（下）</a><br>
 	<a href="page/chapter5/chapter5.jsp">第五章：javaBean使用</a><br>
-	<a href="page/chapter6/chapter6.jsp">第六章：</a><br>
+	<a href="page/chapter6/chapter6.jsp">第六章：jsp状态管理</a><br>
 </body>
 </html>
