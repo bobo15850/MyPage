@@ -29,5 +29,11 @@
 
 	<jsp:useBean id="user2" class="com.po.Users" />
 	用户名：<%=user2.getUsername()%><br> 密码：<%=user2.getPassword()%>
+
+
+	<!-- javaBean四个作用域范围 -->
+	<h1>javaBean四个作用域范围</h1>
+	<h3>有四种作用域范围：page,request,session,application；在scope中指定</h3>
+	<h5>参见testScope.jsp</h5>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <title>dologin</title>
 </head>
 <body>
-	<jsp:useBean id="myUsers" class="com.po.Users" scope="page"></jsp:useBean>
+	<jsp:useBean id="myUsers" class="com.po.Users" scope="session"></jsp:useBean>
 	<h1>setPoroerty动作元素</h1>
 	<hr>
 
@@ -50,7 +50,9 @@
 
 	<!-- getPorperty动作标签 -->
 	<h1>getPorperty动作标签</h1>
-	<jsp:getProperty property="username" name="myUsers"/>
-	<jsp:getProperty property="password" name="myUsers"/>
+	<jsp:getProperty property="username" name="myUsers" />
+	<jsp:getProperty property="password" name="myUsers" />
+	<hr>
+	<a href="testScope.jsp">跳转到testScope</a>
 </body>
 </html>
