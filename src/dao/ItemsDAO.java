@@ -44,7 +44,7 @@ public class ItemsDAO {
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
-			}//释放集合元素
+			}
 			if (stmt != null) {
 				try {
 					stmt.close();
@@ -52,7 +52,52 @@ public class ItemsDAO {
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
-			}//释放资源
-		}
-	}//得到所有商品 	
+			}
+		}// 閲婃斁璧勬簮
+	}
+
+	public Items getItemById(int id) {
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DBHelper.getConnection();
+			String sql = "select * from items where id=" + id;
+			stmt = conn.prepareStatement(sql);
+			rs = stmt.executeQuery();
+			Items item = new Items();
+			while (rs.next()) {
+				if (rs.getInt("id") == id) {
+					item.setId(rs.getInt("id"));
+					item.setName(rs.getString("name"));
+					item.setNumber(rs.getInt("number"));
+					item.setCity(rs.getString("city"));
+					item.setPrice(rs.getInt("price"));
+					item.setPicture(rs.getString("picture"));
+					break;
+				}
+			}
+			return item;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		} finally {
+			if (rs != null) {
+				try {
+					rs.close();
+					rs = null;
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if (stmt != null) {
+				try {
+					stmt.close();
+					stmt = null;
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}// 閲婃斁璧勬簮
+	}
 }

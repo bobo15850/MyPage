@@ -42,5 +42,5 @@ public class DBHelper {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-	}
+	}//测试数据库连通性
 }
