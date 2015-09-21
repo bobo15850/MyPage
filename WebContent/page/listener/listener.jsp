@@ -22,6 +22,19 @@ img {
 	<h1>监听器启动顺序</h1>
 	<img alt="监听器启动顺序" src="../../images/监听器启动顺序.jpg">
 	<hr>
-
+	<h1>监听器的分类</h1>
+	<img alt="按监听对象划分" src="../../images/监听器按监听对象划分.jpg">
+	<img alt="按监听事件划分" src="../../images/监听器按监听事件划分.jpg">
+	<hr>
+	<h1>servletContext监听器</h1>
+	<img alt="servletContext监听器" src="../../images/servletContext监听器.jpg">
+	<h1>httpSession监听器</h1>
+	<img alt="httpSession监听器" src="../../images/httpSession监听器.jpg">
+	<h3>httpSession监听器销毁的三种情形</h3>
+	<h4>
+		1.关闭服务器<br> 2.关闭浏览器，一段时间后，session自动消失<br> 3.seesion 超时
+	</h4>
+	<h1>servletRequest监听器</h1>
+	<img alt="servletRequest监听器" src="../../images/servletRequest监听器.jpg">
 </body>
 </html>
