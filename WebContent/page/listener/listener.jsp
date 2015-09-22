@@ -36,5 +36,12 @@ img {
 	</h4>
 	<h1>servletRequest监听器</h1>
 	<img alt="servletRequest监听器" src="../../images/servletRequest监听器.jpg">
+	<hr>
+	<h1>属性的增删监听</h1>
+	<img alt="属性的增删监听" src="../../images/属性的增删监听.jpg">
+	<h1>绑定到httpSession中的对象监听</h1>
+	<img alt="绑定到httpSession中的对象监听"
+		src="../../images/绑定到httpSession中的对象监听.jpg">
+	<h2>钝化和活化需要实现Serializable接口</h2>
 </body>
 </html>
