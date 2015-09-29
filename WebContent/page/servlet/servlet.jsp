@@ -1,4 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -24,12 +26,18 @@ img {
 
 	<!-- servlet执行流程和生命周期-->
 	<h1>servlet执行流程和生命周期</h1>
-	<h3>1.客户端发送请求给服务器。<br> 2.服务器开始接受，先判断该请求的servlet实例是否存在，如果不存在先装载一个servlet类并创建实例(先执行构造方法然后执行init)。<br>
-		3.如果存在则直接调用该servlet的service方法，之后进行判断是调用doGet方法还是doPost方法。<br> 4.最后判断服务是否关闭，如果关闭则调用destroy方法。<br>
+	<h3>
+		1.客户端发送请求给服务器。<br>
+		2.服务器开始接受，先判断该请求的servlet实例是否存在，如果不存在先装载一个servlet类并创建实例(先执行构造方法然后执行init)。<br>
+		3.如果存在则直接调用该servlet的service方法，之后进行判断是调用doGet方法还是doPost方法。<br>
+		4.最后判断服务是否关闭，如果关闭则调用destroy方法。<br>
 	</h3>
 	<br>
-	<h4>1、提交超链接请求后，服务器会在web.xml中的servlet-mapping寻找对应的url(url-pattern)地址，然后得到这个servlet的名称。<br>
-		2、得到名称后，在servlet中寻找名称相同的标签，然后得到处理类（servlet-class文件）<br> 3、进入servlet处理类，根据请求方式（get或者post）执行d（oGet或者doPost）方法<br></h4>
+	<h4>
+		1、提交超链接请求后，服务器会在web.xml中的servlet-mapping寻找对应的url(url-pattern)地址，然后得到这个servlet的名称。<br>
+		2、得到名称后，在servlet中寻找名称相同的标签，然后得到处理类（servlet-class文件）<br>
+		3、进入servlet处理类，根据请求方式（get或者post）执行d（oGet或者doPost）方法<br>
+	</h4>
 	<hr>
 
 
@@ -42,13 +50,17 @@ img {
 
 	<!-- servlet与jsp内置对象之间关系 -->
 	<h1>servlet与jsp内置对象之间关系</h1>
-	<img alt="servlet与jsp内置对象之间关系图" src="../../images/servlet与jsp内置对象关系图.jpg">
+	<img alt="servlet与jsp内置对象之间关系图"
+		src="../../images/servlet与jsp内置对象关系图.jpg"
+	>
 	<hr>
 
 	<!-- servlet路径跳转 -->
 	<h1>servlet路径跳转</h1>
-	<h3>1.超链接的第一个斜线表示的是服务器的根目录；<br> 2.servlet前边打斜线，表示到根目录下打开servlet项目<br>
-		3.利用request.getContextpath()，其代表项目的根目录<br> 4.url-pattern处的斜线代表项目的根目录,必须添加<br>
+	<h3>
+		1.超链接的第一个斜线表示的是服务器的根目录；<br> 2.servlet前边打斜线，表示到根目录下打开servlet项目<br>
+		3.利用request.getContextpath()，其代表项目的根目录<br>
+		4.url-pattern处的斜线代表项目的根目录,必须添加<br>
 		5.response.sendRedirect当前路径是ServletPathDirection/servlet/<br>6.服务器内部跳转，斜线代表项目根目录
 	</h3>
 	<hr>
@@ -56,8 +68,9 @@ img {
 
 	<!-- servlet初始化参数设置 -->
 	<h1>servlet初始化参数设置</h1>
-	<h3>1.web.xml中配置参数语句(可以配置多对)：<br> init-param<br> param-name /param-name<br> param-value
-		/param-value<br> /init-param
+	<h3>
+		1.web.xml中配置参数语句(可以配置多对)：<br> init-param<br> param-name
+		/param-name<br> param-value /param-value<br> /init-param
 	</h3>
 	<h3>2.获取初始化参数用：ServletConfig里面的getInitparameter()</h3>
 	<hr>
