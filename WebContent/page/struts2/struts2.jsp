@@ -27,5 +27,26 @@ img {
 
 	<h1>struts核心文件</h1>
 	<img src="../../images/struts_xml文件内容.jpg" alt="struts_xml文件内容" />
+	<hr />
+	<h1>Struts2访问Servlet API的三种方式</h1>
+	<img src="../../images/Struts2访问Servlet API的三种方式.jpg" alt="Struts2访问Servlet API的三种方式" />
+	<hr />
+	<h1>action搜索顺序</h1>
+	<img src="../../images/action搜索顺序.jpg" alt="action搜索顺序" />
+	<hr />
+	<h1>动态方法调用</h1>
+	<img src="../../images/动态方法调用.jpg" alt="动态方法调用" />
+	<h1>感叹号方式不推荐，通配符方式最好</h1>
+	<hr />
+	<h1>多个配置文件</h1>
+	<img src="../../images/多个配置文件.jpg" alt="多个配置文件" />
+	<hr />
+	<h1>action接受参数的常用三种方式</h1>
+	<img src="../../images/action接受参数的常用三种方式.jpg" alt="action接受参数的常用三种方式" />
+	<hr />
+	<h1>action返回类型</h1>
+	<img src="../../images/action返回类型.jpg" alt="action返回类型" />
+	<hr />
+
 </body>
 </html>
